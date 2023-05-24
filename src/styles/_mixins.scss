@@ -1,0 +1,86 @@
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+@mixin bodyText($size) {
+  font-weight: 400;
+  @if $size == large {
+    font-size: 16px;
+    line-height: 2;
+    @include mq("tablet-wide") {
+      font-size: 18px;
+    }
+  }
+  @if $size == normal {
+    font-size: 14px;
+    line-height: 2;
+    @include mq("tablet-wide") {
+      font-size: 16px;
+    }
+  }
+  @if $size == small {
+    font-size: 12px;
+    line-height: 1.8;
+    @include mq("tablet-wide") {
+      font-size: 14px;
+    }
+  }
+}
+@mixin menuEffect($color, $bg) {
+  a {
+    position: relative;
+    &:hover {
+      background-color: $bg !important;
+      text-decoration: none;
+      // svg path {
+      //   fill: $color;
+      // }
+      &::before,
+      &::after {
+        width: 50%;
+      }
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 1px;
+      background-color: $color;
+      transition: width 0.3s ease-in-out;
+    }
+  }
+}
+@mixin menuHover1() {
+  a {
+    &::before {
+      top: auto;
+      bottom: 0;
+      right: 50%;
+    }
+    &::after {
+      top: auto;
+      bottom: 0;
+      left: 50%;
+    }
+  }
+}
+@mixin menuHover2() {
+  a {
+    &::before {
+      top: 0;
+      right: 0;
+    }
+    &::after {
+      bottom: 0;
+      left: 0%;
+    }
+  }
+}

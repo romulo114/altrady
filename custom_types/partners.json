@@ -1,0 +1,38 @@
+{
+  "Main": {
+    "partner_group": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "icon": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Icon"
+            }
+          },
+          "name": {
+            "type": "Text",
+            "config": {
+              "label": "Name"
+            }
+          },
+          "description": {
+            "type": "Text",
+            "config": {
+              "label": "Description"
+            }
+          },
+          "slug": {
+            "type": "Text",
+            "config": {
+              "label": "Slug"
+            }
+          }
+        },
+        "label": "Partner Group"
+      }
+    }
+  }
+}

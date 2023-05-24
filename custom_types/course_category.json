@@ -1,0 +1,45 @@
+{
+  "Main": {
+    "course_cover": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Course Cover"
+      }
+    },
+    "flag_page": {
+      "type": "Boolean",
+      "config": {
+        "placeholder_false": "include",
+        "placeholder_true": "exclude",
+        "default_value": false,
+        "label": "Flag Page"
+      }
+    },
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "Name"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "config": {
+        "label": "Description"
+      }
+    },
+    "text": {
+      "type": "Text",
+      "config": {
+        "label": "Text"
+      }
+    },
+    "slug": {
+      "type": "Text",
+      "config": {
+        "label": "Slug"
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "Main": {
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "content": {
+      "type": "Text",
+      "config": {
+        "label": "Content"
+      }
+    },
+    "quarter_year": {
+      "type": "Text",
+      "config": {
+        "label": "Quarter year"
+      }
+    },
+    "status": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "Development",
+          "Researching",
+          "Backlog",
+          "Released",
+          "Canceled"
+        ],
+        "default_value": "Development",
+        "label": "Status",
+        "placeholder": "Development"
+      }
+    },
+    "flag_page": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Flag Page"
+      }
+    }
+  }
+}

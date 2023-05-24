@@ -1,0 +1,42 @@
+// Colors
+$yellow-light: #fc781a;
+$dark: #13161a;
+$black: #1e2225;
+$dark-bg: #141617;
+$dark-light: #181b1f;
+$green: #1bc47d;
+$blue: #017aff;
+$blue2: #26a8ff;
+$orange: #fd791a;
+$yellow-bg: #c6d32b;
+$yellowish: #ef3e36;
+$red: #c62828;
+$pink: #d61881;
+$yellow: #f6b043;
+$white: #fff;
+$gray: rgba(13, 23, 42, 0.64);
+
+$primary: #0d172a;
+$secondary: rgba(13, 23, 42, 0.8);
+$border-color: #eff2f7;
+$light-blue-bk: #fafcff;
+
+$blue-hover: #2a8fff;
+$blue-active: #0170eb;
+
+// Media query breakpoints
+$breakpoints: (
+  "phone": 400px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-wide": 991px,
+  "desktop-small": 1024px,
+  "desktop": 1220px,
+  "desktop-wide": 1440px,
+);
+
+// Z-index
+$z-overlay: 9;
+$z-header: 10;

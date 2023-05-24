@@ -1,0 +1,114 @@
+{
+  "Main": {
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "slug": {
+      "type": "Text",
+      "config": {
+        "label": "slug"
+      }
+    },
+    "meta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Title"
+      }
+    },
+    "meta_description": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Description"
+      }
+    },
+    "meta_keywords": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Keywords"
+      }
+    },
+    "flag_page": {
+      "type": "Boolean",
+      "config": {
+        "placeholder_false": "include",
+        "placeholder_true": "exclude",
+        "default_value": false,
+        "label": "Flag Page"
+      }
+    },
+    "thumbnail": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Thumbnail"
+      }
+    },
+    "cover_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Cover Image"
+      }
+    },
+    "summary": {
+      "type": "Text",
+      "config": {
+        "label": "Summary"
+      }
+    },
+    "content": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "Content"
+      }
+    },
+    "category": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["blog_category"],
+        "label": "Category"
+      }
+    },
+    "featured": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Featured"
+      }
+    },
+    "trending": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Trending"
+      }
+    },
+    "date": {
+      "type": "Date",
+      "config": {
+        "label": "Date"
+      }
+    },
+    "banner": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Banner"
+      }
+    },
+    "homepage": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Homepage"
+      }
+    }
+  }
+}

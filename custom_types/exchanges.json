@@ -1,0 +1,200 @@
+{
+  "Main": {
+    "meta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Title"
+      }
+    },
+    "meta_description": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Description"
+      }
+    },
+    "meta_keywords": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Keywords"
+      }
+    },
+    "flag_page": {
+      "type": "Boolean",
+      "config": {
+        "placeholder_false": "include",
+        "placeholder_true": "exclude",
+        "default_value": false,
+        "label": "Flag Page"
+      }
+    },
+    "stats": {
+      "type": "IntegrationFields",
+      "config": {
+        "catalog": "altrady--exchange_stats",
+        "label": "stats"
+      }
+    },
+    "icon": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Icon"
+      }
+    },
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "Name"
+      }
+    },
+    "slug": {
+      "type": "Text",
+      "config": {
+        "label": "Slug"
+      }
+    },
+    "exchange_url": {
+      "type": "Text",
+      "config": {
+        "label": "Exchange URL"
+      }
+    },
+    "position": {
+      "type": "Number",
+      "config": {
+        "label": "Position"
+      }
+    },
+    "short_description": {
+      "type": "Text",
+      "config": {
+        "label": "Short Description"
+      }
+    },
+    "section_title": {
+      "type": "Text",
+      "config": {
+        "label": "Section Title"
+      }
+    },
+    "section_subtitle": {
+      "type": "Text",
+      "config": {
+        "label": "Section Subtitle"
+      }
+    },
+    "partner": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Partner"
+      }
+    },
+    "upcoming": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Upcoming"
+      }
+    },
+    "benefit_group": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "content": {
+            "type": "Text",
+            "config": {
+              "label": "Content"
+            }
+          }
+        },
+        "label": "Benefit Group"
+      }
+    },
+    "type_group": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "support": {
+            "type": "Boolean",
+            "config": {
+              "default_value": false,
+              "label": "Support"
+            }
+          },
+          "select_type": {
+            "type": "Select",
+            "config": {
+              "options": ["Spot", "Futures", "Margin*", "Options*"],
+              "default_value": "Spot",
+              "label": "Select Type",
+              "placeholder": "Spot"
+            }
+          }
+        },
+        "label": "Type Group"
+      }
+    },
+    "exchange_feature": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "feature_image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Feature Image"
+            }
+          },
+          "kicker": {
+            "type": "Text",
+            "config": {
+              "label": "Kicker"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "text": {
+            "type": "Text",
+            "config": {
+              "label": "Text"
+            }
+          },
+          "btn_name": {
+            "type": "Text",
+            "config": {
+              "label": "Button Name"
+            }
+          },
+          "feature_slug": {
+            "type": "Text",
+            "config": {
+              "label": "Feature Slug"
+            }
+          }
+        },
+        "label": "Exchange Feature"
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "Main": {
+    "meta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Title"
+      }
+    },
+    "meta_description": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Description"
+      }
+    },
+    "meta_keywords": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Keywords"
+      }
+    },
+    "flag_page": {
+      "type": "Boolean",
+      "config": {
+        "placeholder_false": "include",
+        "placeholder_true": "exclude",
+        "default_value": false,
+        "label": "Flag Page"
+      }
+    },
+    "img": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Img"
+      }
+    },
+    "icon": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Icon"
+      }
+    },
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "Name"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "config": {
+        "label": "Description"
+      }
+    },
+    "kicker": {
+      "type": "Text",
+      "config": {
+        "label": "Kicker Text"
+      }
+    },
+    "header": {
+      "type": "Text",
+      "config": {
+        "label": "Header"
+      }
+    },
+    "content": {
+      "type": "Text",
+      "config": {
+        "label": "Content"
+      }
+    },
+    "slug": {
+      "type": "Text",
+      "config": {
+        "label": "Slug"
+      }
+    },
+    "type": {
+      "type": "Select",
+      "config": {
+        "options": ["Discover", "Execute", "Analyze"],
+        "default_value": "Discover",
+        "label": "Type",
+        "placeholder": "Discover"
+      }
+    },
+    "priority": {
+      "type": "Number",
+      "config": {
+        "label": "Priority"
+      }
+    },
+    "featured_in_navbar": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Featured In Navbar"
+      }
+    },
+    "section_title": {
+      "type": "Text",
+      "config": {
+        "label": "Section Title"
+      }
+    },
+    "feature_group": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "icon": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Icon"
+            }
+          },
+          "kicker": {
+            "type": "Text",
+            "config": {
+              "label": "Kicker"
+            }
+          },
+          "header": {
+            "type": "Text",
+            "config": {
+              "label": "Header"
+            }
+          },
+          "content": {
+            "type": "Text",
+            "config": {
+              "label": "Content"
+            }
+          }
+        },
+        "label": "Feature Group"
+      }
+    },
+    "other_features": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "icon": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Icon"
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "desc": {
+            "type": "Text",
+            "config": {
+              "label": "Desc"
+            }
+          },
+          "url": {
+            "type": "Text",
+            "config": {
+              "label": "url"
+            }
+          }
+        },
+        "label": "other_features"
+      }
+    }
+  }
+}

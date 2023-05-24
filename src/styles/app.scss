@@ -1,0 +1,384 @@
+@import "./variables";
+@import "./mixins";
+
+html,
+body {
+  margin: 0;
+  width: 100vw;
+  // overflow-x: hidden;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $primary;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 0px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba($black, 0.8);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $blue;
+    // outline: 1px solid $blue;
+    border-radius: 3px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+a,
+button,
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+hr {
+  border-color: rgba(white, 0.2);
+}
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-style: normal;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 0;
+  @include mq("phone-wide", max) {
+    font-size: 14px;
+  }
+  &.kicker {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $blue;
+    @include mq("phone-wide", max) {
+      font-size: 12px;
+    }
+  }
+  &.navlink {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &.caption {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &.label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    &-strike {
+      text-decoration-line: line-through;
+      color: rgba(13, 23, 42, 0.4);
+      @include mq("phone-wide", max) {
+        font-size: 12px;
+      }
+    }
+  }
+  &.lead-text {
+    font-size: 18px;
+    line-height: 150%;
+    @include mq("phone-wide", max) {
+      font-size: 16px;
+    }
+  }
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  @include mq("phone-wide", max) {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  @include mq("phone-wide", max) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  @include mq("phone-wide", max) {
+    font-size: 18px;
+  }
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  @include mq("phone-wide", max) {
+    font-size: 16px;
+  }
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  @include mq("phone-wide", max) {
+    font-size: 12px;
+  }
+}
+
+.layout {
+  &-container {
+    max-width: 1280px;
+    margin: auto;
+    width: calc(100vw - 50px);
+    position: relative;
+
+    @include mq("tablet-wide", max) {
+      width: calc(100vw - 48px);
+      margin: 0 24px;
+    }
+    @include mq("phone-wide", max) {
+      width: calc(100vw - 24px);
+      margin: 0 12px;
+    }
+  }
+}
+.coinigy-layout {
+  width: calc(100vw - 50px);
+  max-width: 612px;
+  text-align: center;
+  margin: auto;
+}
+.exchange-layout {
+  width: calc(100vw - 50px);
+  max-width: 632px;
+  text-align: center;
+  margin: auto;
+}
+.member {
+  position: relative;
+  margin: auto;
+  width: calc(100vw - 50px);
+  max-width: 848px;
+  text-align: center;
+}
+main {
+  padding-top: 80px;
+  width: 100%;
+}
+
+.overlap {
+  display: none;
+}
+.img-container {
+  border-radius: 10px;
+  opacity: 0.4;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+//styles for background color
+.bk-color {
+  //bk-color-white
+  &-blue {
+    background: $blue !important;
+  }
+  &-white {
+    background-color: $white !important;
+    .overlap {
+      display: block;
+      background-color: white;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9;
+    }
+  }
+}
+
+//styles for color
+.color {
+  &-negative {
+    color: $red;
+  }
+  &-tertiary {
+    color: rgba(13, 23, 42, 0.64);
+  }
+  &-dark-tertiary {
+    color: rgba(255, 255, 255, 0.64);
+  }
+  &-primary {
+    color: $blue;
+  }
+  &-secondary {
+    color: $secondary;
+  }
+  &-white {
+    color: $white;
+  }
+  &-red {
+    color: $yellowish;
+  }
+}
+
+.bg-gray {
+  background: #fafcff;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.border-trb {
+  border: 1px solid $border-color;
+  border-left: none;
+}
+
+.border-tb {
+  border: 1px solid $border-color;
+  border-left: none;
+  border-right: none;
+}
+
+.text-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tablet-hide {
+  @include mq("tablet-wide", max) {
+    display: none;
+  }
+}
+.width-lg-20 {
+  width: 20%;
+  flex: 0 0 20%;
+  @include mq("tablet-wide", max) {
+    flex: 0 0 50%;
+  }
+}
+
+.width-sm-20 {
+  @include mq("tablet-wide", max) {
+    flex: 0 0 20%;
+  }
+}
+
+.embed-youtube {
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.txt-gray {
+  color: $gray !important;
+}
+
+.txt-blue {
+  color: $blue;
+}
+
+.popup-container {
+  position: fixed;
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  height: 230px;
+  padding: 24px 48px 32px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background: linear-gradient(to right, #017aff, #3cc4ff);
+  box-shadow: 0 8px 24px 0 rgb(0 0 0 / 24%);
+  background-clip: border-box;
+  color: white;
+  @include mq("phablet") {
+    border-radius: 16px;
+    max-width: 672px;
+    height: 211px;
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @include mq("desktop") {
+    max-width: 956px;
+    height: 181px;
+  }
+}
+
+.popup-close {
+  display: flex;
+  align-items: center;
+  color: white !important;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: right;
+  justify-content: flex-end;
+  @include mq("phablet") {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+  }
+  @include mq("desktop") {
+    top: 24px;
+    right: 32px;
+  }
+}
+
+.row-reverse {
+  @include mq("tablet-wide", max) {
+    flex-direction: column-reverse !important;
+  }
+}
+
+.center-align {
+  left: 50%;
+  transform: translateX(-50%);
+}

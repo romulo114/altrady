@@ -1,0 +1,48 @@
+{
+  "Main" : {
+    "icon" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Icon"
+      }
+    },
+    "name" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Name"
+      }
+    },
+    "slug" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Slug"
+      }
+    },
+    "color" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Color"
+      }
+    },
+    "meta_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Meta Title"
+      }
+    },
+    "meta_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Meta Description"
+      }
+    },
+    "meta_keywords" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Meta Keywords"
+      }
+    }
+  }
+}

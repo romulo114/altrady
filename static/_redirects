@@ -1,0 +1,5 @@
+/s/* https://app.altrady.com/s/:splat 301!
+/crypto-academy /academy 301!
+
+https://altrady.netlify.app/* https://www.altrady.com/:splat 301!
+http://altrady.netlify.app/*  https://www.altrady.com/:splat 301!
